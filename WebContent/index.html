@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+#button{
+	font-size: 14px;
+}
+
+</style>
+<title>HOW MANY TIMES DID YOU ...</title>
+</head>
+<body>
+<div id="howmanytimes">HOW MANY TIMES DID YOU ...?</div>
+<div id="doSomething"></div>
+
+<br/><br/><br/><br/><br/><br/><br/>
+<div id="times">0</div>
+<br/><br/><br/><br/><br/><br/><br/>
+<input type="button" id="button" value="ONE"/>
+<!-- jQuery --> 
+<script type="text/javascript" src="./resources/js/jquery-1.11.1.js"></script>
+<script>
+$('#doSomething').text("CONVERT A PERSON TO PASSPORT");
+$('#button').click(function(){
+	var times = parseInt($('#times').text());
+	times++;
+	$('#times').text(times);
+});
+</script>
+</body>
+
+</html>
